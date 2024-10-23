@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/bootstrap.bundle.js"></script>
+
+
+
+    <script>
+        function changeprice()
+        {
+            // alert("hello")
+            var pp=document.getElementById("pp").innerHTML;
+            // alert(pp);
+            var qty=document.getElementById("qty").value;
+            // alert(qty);
+            var tp=pp*qty;
+            document.getElementById("tp").innerHTML=tp;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- top header -->
+    <div class="container-fluid">
+        <!-- top header -->
+        <div class="row bg-dark p-0 ">
+            <div class="col-sm-1">
+                <a href="#">
+                    <img src="images/logo.png" class="h-100 w-100" alt="">
+                </a>
+            </div>
+            <div class="col-sm-2">
+                <a href="#" class="text-light ">
+                    <p class="p-0 m-0 "><small>Delivering to BST 272002</small></p>
+                    <i class="fa-solid fa-location-dot"></i> <small class="fs-6 fw-bold ">Update location</small>
+                </a>
+            </div>
+            <div class="col-sm-5">
+                <div class="input-group py-2">
+                    <button type="button" class="btn btn-outline bg-light dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown" aria-expanded="false"> All </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                    <input type="text" class="form-control shadow-none "
+                        aria-label="Text input with segmented dropdown button" placeholder="Search Amazon.in">
+                    <button class="btn btn-outline bg-light searchb" type="button" id="button-addon2">
+                        <i class="fa-bold fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col-sm-1 pt-3">
+                <a href="#" class="text-light">
+                    <img src="images/india.png" class="h-50 w-25" alt="">
+                    <small class="text-light fw-bold">EN</small>
+                </a>
+            </div>
+            <div class="col-sm-1">
+                <a href="#" class="text-light ">
+                    <p class="p-0 m-0 "><small>Delivering </small></p>
+                    <small class="fw-semibold dropdown-toggle">Account & Lists</small>
+                </a>
+            </div>
+            <div class="col-sm-1">
+                <a href="#" class=" text-light">
+                    <p class="p-0 m-0 "><small>Returns</small></p>
+                    <small class="fs-6 fw-bold ">& Order</small>
+                </a>
+            </div>
+            <div class="col-sm-1">
+                <a href="#" class=" text-light">
+                    <div class="text-light pt-3"><i class="fa-solid fa-cart-shopping fs-5"> </i> Cart</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- second row -->
+        <div class="row secondrow">
+            <div class="col-sm-12">
+                <ul class="nav d-flex justify-content-evenly my-0 pb-2 ">
+                    <li><a href="#" class="text-light menu-hover">All</a></li>
+                    <li><a href="#" class="text-light menu-hover">MX Player</a></li>
+                    <li><a href="#" class="text-light menu-hover">Cell</a></li>
+                    <li><a href="#" class="text-light menu-hover">Best Seller's</a></li>
+                    <li><a href="#" class="text-light menu-hover">Mobiles</a></li>
+                    <li><a href="#" class="text-light menu-hover">Today's Deals</a></li>
+                    <li><a href="#" class="text-light menu-hover">Electronics</a></li>
+                    <li><a href="#" class="text-light menu-hover">Prime</a></li>
+                    <li><a href="#" class="text-light menu-hover">Home&Kitchen</a></li>
+                    <li><a href="#" class="text-light menu-hover">Customer Service</a></li>
+                    <li><a href="#" class="text-light menu-hover">Fashion</a></li>
+                    <li><a href="#" class="text-light menu-hover">New Release</a></li>
+                    <li><a href="#" class="text-light menu-hover">Computer</a></li>
+                    <li><a href="#" class="text-light menu-hover">Fashion</a></li>
+                    <li><a href="#" class="text-light menu-hover">Amazon Pay</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- second row -->
+
+        <!-- card -->
+        <div class="row">
+            <div class="col-sm-11 mx-auto py-5">
+                <div class="row ">
+                    <div class="col-sm-8">
+                        <div class="card my-3 shadow border-0">
+                            <div class="row px-3 pt-2">
+                                <div class="col-sm-6">
+                                    <h4>Shopping Cart</h4>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h6 class="text-end">Price</h6>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/watch.png" class="img-fluid rounded-start img-shadow ps-4" alt="...">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Watch</h5>
+                                        <p class="card-text">TIMEWEAR Analog New Track Number Dial Day Date Functioning Brown Leather Strap Watch for Men.
+                                        </p>
+                                        <span class="text-danger">In stock</span>
+                                        <p class="text-secondary">Eligible For FREE Shipping</p>
+                                        <input type="checkbox"> <small class="text-secondary fw-semibold">This will be a
+                                            gift Learn More</small>
+                                        <br>
+                                        <small class="text-secondary"><b>Color : </b>Black</small>
+                                        <br>
+                                        <small class=" fw-semibold">
+                                            <ul class="nav pt-2 ">
+
+                                                <li class="bg-secondary rounded p-1">
+                                                    Qty:
+                                                    <select name="" id="qty" class="bg-transparent border-0" onchange="changeprice()">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </li>
+                                                <li class="ps-2 pt-1"><a href="#" class="text-secondary ">| Delete</a></li>
+                                                <li class="ps-2 pt-1"><a href="#" class="text-secondary ">| Save for leter</a></li>
+                                                <li class="ps-2 pt-1"><a href="#" class="text-secondary ">| See more like this</a></li>
+                                                <li class="ps-2 pt-1"><a href="#" class="text-secondary ">| Share</a></li>
+                                            </ul>
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 ">
+                                    <div class="text-center fw-bold">
+                                       <span>&#8377;</span> <span id="pp">1200</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <h6 class="text-end text-secondary px-5 pb-4">SubTotal(1 Items): <span>&#8377;</span> <span >1200</span></h6>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card my-3 shadow border-0">
+                            <div class="card-body text-secondary p-3">
+                                <p>Your Order is eligible for FREE Delivery. Select this option at checkout. Details.
+                                </p>
+
+                                <h6>Subtotal( <b>1</b> items): <span>&#8377;</span> <span id="tp">1200</span></h6>
+
+                                     <input type="checkbox"> This order contain a gift
+                                <br>
+                                <a href="#" class="btn btn-warning w-100 mt-5 p-2">Proceed to Buy</a>
+                                <a href="#" class="btn btn-light w-100 my-5 mb-5 border border-2 border-dark p-3 ">EMI available</a>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card end -->
+
+    </div>
+
+</body>
+
+</html>
